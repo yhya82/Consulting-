@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+     <div class="container mx-auto px-4 flex justify-between p-5 mt-4 relative">
+      <!--logo-->
+      <div class="flex items-center mb-4">
+        <img src="images/logo.svg" alt="" class="w-20 h-16">
+        <p class="text-2xl xl:text-4xl font-bold">CLF</p>
+      </div>
+      <!--nav bar-->
+        <nav>
+          <ul class="hidden lg:flex space-x-4">
+            <li><a href="index.html" class="text-xl xl:text-4xl">Home</a></li>
+            <li><a href="service.html" class="text-xl xl:text-4xl">Services</a></li>
+            <li><a href="dest.html" class="text-xl xl:text-4xl">Destinations</a></li>
+          </ul>
+        </nav>
+      <!--deskstop button-->
+      <div class="flex items-center space-x-2">
+        <a href="contact.html" class="bg-green-900 text-white text-xl xl:text-3xl  p-2 xl:p-4">Book Consultation</a>
+        <!--mbile button-->
+        <button id="btn" class="block lg:hidden  "><i class="fa-solid fa-bars text-5xl"></i></button>
+      </div>
+        
+          <!--mobile menu-->
+            <div id="menu-btn" class="hidden absolute  top-full w-full bg-gray-100 ">
+                <ul class="flex flex-col space-y-3 items-center p-5 ">
+                  <a href="" class="block text-3xl">home</a>
+                  <a href="" class="block text-3xl">services</a>
+                  <a href="" class="block text-3xl">destinations</a>
+                </ul>
+            </div>
+</div>
+
+<section id="contact" class="container mx-auto px-4 ">
+<div class="bg-green-800 flex justify-center items-center h-50 lg:h-80" >
+        <p class="text-center text-white font-bold text-4xl md:text-5xl lg:text-6xl xl:text-8xl p-5">Contact</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto gap-5 lg:gap-8 mt-10 lg:mt-24">
+
+        <div class="flex flex-col bg-green-200 p-4 rounded-2xl">
+            <p class="text-2xl lg:text-4xl text-gray-700">Have questions, ideas, or plans you’d like to discuss? Our team is here to help you make your journey smooth and successful. Whether it’s travel, study abroad, or consulting services, reach out and we’ll respond promptly to guide you every step of the way.</p>
+
+        </div>
+
+        <div class="flex items-center mx-auto ">
+        <form id="contact-form" action="https://formspree.io/f/mvzwzbjg" method="post">
+            <div class="flex flex-col">
+                <label class="text-2xl lg:text-4xl mb-2">Full Name</label>
+                <input type="text" name="name" placeholder="Enter your name" class="border border-gray-600 p-4 w-100 ">
+            </div>
+            <div class="flex flex-col">
+                <label class="text-2xl lg:text-4xl mt-2 mb-2">Email</label>
+                <input type="text" name="email" placeholder="Enter email" class="border border-gray-600 p-4 w-100 ">
+            </div>
+            <div class="flex flex-col mt-2 mb-2">
+                <label class="text-2xl lg:text-4xl">Subject</label>
+                <input type="text" name="subject" placeholder="Enter message" class="border border-gray-600 p-4 w-100 ">
+            </div>
+            <div class="flex flex-col mt-2 mb-2">
+                <label class="text-2xl lg:text-4xl ">Message</label>
+                <input type="textarea" name="message" placeholder="Enter mesage" class="border border-gray-600 p-4 w-100 ">
+            </div>
+            <div class="flex justify-center">
+            <button type="submit" class="text-2xl lg:text-4xl mt-4 lg:mt-8 bg-green-800 p-4 text-white font-semibold hover:bg-green-400">Send Message</button>
+            </div>
+        </form>
+        <p id="success-message" class="hidden">Message Sent Successfully</p>
+        </div>
+    </div>
+</section>
+
+<footer id="footer" class=" container mx-auto bg-black p-5  mt-10 lg:mt-24">
+
+  <div class=" flex flex-col lg:flex-row items-start lg:justify-between   ">
+    <div class="flex  items-start gap-2 lg:w-1/3">
+     
+      <p class="text-2xl lg:text-3xl text-white">your gateway to unforgettable journey and curated experiences around the world </p>
+    </div>
+    <div class="flex-col items-start  ">
+      <h4 class="text-2xl lg:text-3xl font-bold text-white">Quicks Links</h4>
+      <ul class="mt-2 lg:mt-5 text-white text-left ">
+        <a href="index.html" class="block text-base lg:text-2xl  hover:text-gray-600">home</a>
+        <a href="service.html" class="block text-base lg:text-2xl  hover:text-gray-600">services</a>
+        <a href="dest.html" class="block text-base lg:text-2xl  hover:text-gray-600">destinations</a>
+        <a href="contact.html" class="block text-base lg:text-2xl hover:text-gray-600">contact</a>
+      </ul>
+
+    </div>
+    <div class="flex-col items-start  ">
+      <h4 class="text-2xl lg:text-3xl font-bold text-white">Get in Touch</h4>
+      <p class="text-xl lg:text-2xl mt-2 lg:mt-5 text-white hover:underline"> <a href="mailto:gassamay78@gmail.com">Email: gassamay78@gmail.com</a></p>
+      <p class="text-xl lg:text-2xl text-white hover:underline"><a href="tel:+2205190199">Phone: +220 5190199</a></p>
+      <p class="text-xl lg:text-2xl text-white hover:underline"><a href="https://wa.me/2205190199">Chat on Whatsapp</a></p>
+      <p class="text-xl lg:text-2xl text-white hover:underline">Locaion:Brusubi-Turntable</p>
+
+    </div>
+
+  </div>
+  <div class="h-px bg-gray-300 mt-6 "></div>
+
+  <h2 class="text-2xl lg:text-3xl text-center mt-4 text-white">@2026.All rights reserved</h2>
+
+</footer>
+<script>
+    const button = document.getElementById('btn');
+  const menu = document.getElementById('menu-btn');
+
+    button.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener('submit', async function(e){
+      e.preventDefault();
+
+      const data = new FormData(form);
+      const response = await fetch(form.action, {
+        method:"POST",
+        body: data,
+        headers:{'Accept':'application/json'}
+      });
+
+      if(response.ok){
+        document.getElementById('success-message').classList.remove('hidden');
+        form.reset();
+
+      }else{
+
+        alert('Something went wrong. Try Again')
+      }
+
+    });
+</script>
+</body>
+</html>
